@@ -1,0 +1,477 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nguyễn Tuấn Tài - CV</title>
+    <style>
+      @media print {
+        body {
+          margin: 0;
+          padding: 10mm;
+        }
+        .no-print {
+          display: none;
+        }
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Times New Roman", Times, serif;
+        max-width: 210mm;
+        margin: 0 auto;
+        padding: 20mm;
+        background: white;
+        color: #000;
+        line-height: 1.6;
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 20px;
+        border-bottom: 2px solid #000;
+        padding-bottom: 10px;
+      }
+
+      .header h1 {
+        font-size: 28px;
+        font-weight: bold;
+        letter-spacing: 2px;
+        margin-bottom: 8px;
+      }
+
+      .header .contact {
+        font-size: 12px;
+        color: #333;
+      }
+
+      .header .contact a {
+        color: #0066cc;
+        text-decoration: none;
+      }
+
+      .section {
+        margin-bottom: 20px;
+      }
+
+      .section-title {
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        border-bottom: 1.5px solid #000;
+        padding-bottom: 3px;
+        margin-bottom: 10px;
+        letter-spacing: 1px;
+      }
+
+      .section-content {
+        font-size: 12px;
+        padding-left: 0;
+      }
+
+      .job-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: baseline;
+        margin-bottom: 5px;
+      }
+
+      .job-title {
+        font-weight: bold;
+        font-size: 12.5px;
+      }
+
+      .date {
+        font-style: italic;
+        font-size: 11px;
+      }
+
+      .company {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .tech-stack {
+        font-style: italic;
+        color: #333;
+        margin-bottom: 5px;
+      }
+
+      ul {
+        margin-left: 20px;
+        margin-bottom: 10px;
+      }
+
+      li {
+        margin-bottom: 4px;
+      }
+
+      .skills-grid {
+        display: grid;
+        grid-template-columns: 200px 1fr;
+        gap: 10px;
+        margin-bottom: 8px;
+      }
+
+      .skills-grid strong {
+        font-weight: bold;
+      }
+
+      .print-button {
+        position: fixed;
+        top: 20px;
+        right: 20px;
+        padding: 12px 24px;
+        background: #0066cc;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        font-weight: bold;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+      }
+
+      .print-button:hover {
+        background: #0052a3;
+      }
+
+      .github-link {
+        color: #0066cc;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
+      .github-link:hover {
+        text-decoration: underline;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="print-button no-print" onclick="window.print()">
+      📄 Download PDF
+    </button>
+
+    <div class="header">
+      <h1>NGUYỄN TUẤN TÀI</h1>
+      <div class="contact">
+        0707668278 |
+        <a href="mailto:tuantai1915@gmail.com">tuantai1915@gmail.com</a><br />
+        <a href="https://tuantai-portfolio.com" target="_blank">MyPortfolio</a>
+        |
+        <a href="https://github.com/nuyntai19" target="_blank"
+          >github.com/nuyntai19</a
+        >
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">OBJECTIVE</div>
+      <div class="section-content">
+        Third-year Software Engineering student at Sai Gon University with a
+        strong foundation in Java, JavaScript, and DevOps. Aiming to grow as a
+        Full-Stack Engineer with a long-term goal of building scalable,
+        high-performance distributed systems. Passionate about system design,
+        backend architecture, and performance optimization.
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">EDUCATION</div>
+      <div class="section-content">
+        <div class="job-header">
+          <div>
+            <strong>Sai Gon University</strong><br />
+            Bachelor of Software Engineering
+          </div>
+          <div class="date" style="text-align: right">
+            Expected 2028<br />
+            <em>Ho Chi Minh City, Vietnam</em>
+          </div>
+        </div>
+        <ul>
+          <li><strong>GPA:</strong> 3.33/4.0</li>
+          <li>
+            <strong>Relevant Coursework:</strong> Advanced Web Development, Data
+            Structures and Algorithms, Object-Oriented Programming (Java),
+            Software Testing & QA, Database Management.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">SKILLS</div>
+      <div class="section-content">
+        <div class="skills-grid">
+          <strong>Languages:</strong>
+          <span>Java, JavaScript, TypeScript, C#, C++, Python, HTML, CSS</span>
+        </div>
+        <div class="skills-grid">
+          <strong>Frameworks:</strong>
+          <span>Spring Boot, React, Node.js, Next.js, .NET</span>
+        </div>
+        <div class="skills-grid">
+          <strong>Cloud & Databases:</strong>
+          <span>MySQL, SQL Server, MySQL Workbench, MongoDB</span>
+        </div>
+        <div class="skills-grid">
+          <strong>Tools:</strong>
+          <span>Docker, Git, Postman, GitHub CI/CD, Apache Kafka</span>
+        </div>
+        <div class="skills-grid">
+          <strong>Languages:</strong>
+          <span>Vietnamese (Native), English (Working)</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">PROJECTS</div>
+      <div class="section-content">
+        <!-- SmartDoc AI -->
+        <div class="job-header">
+          <div class="job-title">
+            SmartDoc AI
+            <a
+              href="https://github.com/nuyntai19/SmartDoc-AI"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Feb 2026 – Present</div>
+        </div>
+        <div class="tech-stack">
+          Python, Streamlit, LangChain, Ollama, FAISS, Qwen2.5
+        </div>
+        <ul>
+          <li>
+            Built a privacy-first local AI document assistant with Hybrid Search (Vector + Keyword) and Co-RAG architecture.
+          </li>
+          <li>
+            Implemented document ingestion pipeline supporting multiple formats and extracting metadata for accurate retrieval.
+          </li>
+          <li>
+            Developed "Self-RAG" query rewriting for multi-hop reasoning, preventing AI hallucination with strict context filtering.
+          </li>
+        </ul>
+
+        <!-- SGU Admissions Pro -->
+        <div class="job-header">
+          <div class="job-title">
+            SGU Admissions Pro
+            <a
+              href="https://github.com/nuyntai19/University-admissions-management"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Dec 2025 – Present</div>
+        </div>
+        <div class="tech-stack">
+          Java, Spring Boot, Hibernate, Java Swing, MySQL
+        </div>
+        <ul>
+          <li>
+            Developed a comprehensive university admissions platform consisting of a Java Swing Admin Desktop app and a Spring Boot Web Portal.
+          </li>
+          <li>
+            Implemented smart mapping and automated calculation logic to handle complex admission criteria (THPT, ĐGNL, V-SAT) and priority scores.
+          </li>
+          <li>
+            Built an optimized 3-Tier architecture (GUI-BUS-DAO) with strict data validation to process large-scale candidate datasets.
+          </li>
+        </ul>
+
+        <!-- Cinema Booking System -->
+        <div class="job-header">
+          <div class="job-title">
+            Cinema Booking System
+            <a
+              href="https://github.com/nuyntai19"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Jun 2025 – Present</div>
+        </div>
+        <div class="tech-stack">
+          TypeScript, PHP, React, Node.js, MySQL, Redis, AWS, Docker
+        </div>
+        <ul>
+          <li>
+            Built a full-stack cinema booking platform integrating AniList API
+            and multiple streaming providers with fallback handling.
+          </li>
+          <li>
+            Designed scalable App Router architecture (Server/Client Components)
+            to optimize SEO and performance.
+          </li>
+          <li>
+            Implemented Redis caching and custom API aggregation to reduce late
+            limits and improve response time.
+          </li>
+          <li>
+            Developed HLS video streaming with persistent watch history using
+            MongoDB.
+          </li>
+          <li>
+            Deployed on Vercel with automated testing for automatic
+            optimization.
+          </li>
+        </ul>
+
+        <!-- Smart School Bus Tracking -->
+        <div class="job-header">
+          <div class="job-title">
+            Smart School Bus Tracking System
+            <a
+              href="https://github.com/nuyntai19"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Mar 2025 – Present</div>
+        </div>
+        <div class="tech-stack">
+          TypeScript, React Native, Node.js, MongoDB, AWS, Docker
+        </div>
+        <ul>
+          <li>
+            Developed a real-time school bus tracking system with GPS
+            integration and parent notifications.
+          </li>
+          <li>
+            Architected microservices backend serving as API gateway and
+            third-party data aggregator.
+          </li>
+          <li>
+            Designed and implemented core services: Auth (JWT + rate limiting),
+            User management, Bus tracking with real-time updates.
+          </li>
+          <li>
+            Implemented event-driven communication with Kafka and Redis caching
+            to improve scalability and throughput.
+          </li>
+          <li>Deployed Dockerized services on AWS cloud infrastructure.</li>
+        </ul>
+
+        <!-- Hotel Management System -->
+        <div class="job-header">
+          <div class="job-title">
+            Hotel Management System
+            <a
+              href="https://github.com/nuyntai19"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Jan 2025 – Mar 2025</div>
+        </div>
+        <div class="tech-stack">Java, Spring Boot, MySQL, Docker</div>
+        <ul>
+          <li>
+            Built a hotel management system with room booking, customer
+            management, and billing features.
+          </li>
+          <li>
+            Implemented RESTful APIs with Spring Boot and MySQL database with
+            optimized queries.
+          </li>
+          <li>
+            Designed responsive admin dashboard with real-time updates and
+            analytics.
+          </li>
+        </ul>
+
+        <!-- Library Management System -->
+        <div class="job-header">
+          <div class="job-title">
+            Library Management System
+            <a
+              href="https://github.com/nuyntai19"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">Sep 2024 – Dec 2024</div>
+        </div>
+        <div class="tech-stack">Java, Spring Boot, PostgreSQL</div>
+        <ul>
+          <li>
+            Developed a comprehensive library management system with book
+            catalog, borrowing, and return tracking.
+          </li>
+          <li>
+            Implemented user authentication and role-based access control
+            (Student, Librarian, Admin).
+          </li>
+          <li>
+            Created automated email notifications for due dates and overdue
+            books.
+          </li>
+        </ul>
+
+        <!-- Student Management System -->
+        <div class="job-header">
+          <div class="job-title">
+            Student Management System
+            <a
+              href="https://github.com/nuyntai19"
+              target="_blank"
+              class="github-link"
+              >[GitHub]</a
+            >
+          </div>
+          <div class="date">May 2024 – Aug 2024</div>
+        </div>
+        <div class="tech-stack">C#, .NET, SQL Server</div>
+        <ul>
+          <li>
+            Built a student information management system with grade tracking
+            and report generation.
+          </li>
+          <li>
+            Implemented CRUD operations with Entity Framework and SQL Server.
+          </li>
+          <li>
+            Designed Windows Forms UI with data visualization and export to
+            Excel functionality.
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="section-title">ACTIVITIES & INTERESTS</div>
+      <div class="section-content">
+        <ul>
+          <li>
+            Passionate about system design and user-centric web application
+            architecture.
+          </li>
+          <li>
+            Enjoy participating in team sports and continuously improving
+            English communication.
+          </li>
+          <li>
+            Active contributor to open-source projects and technical
+            communities.
+          </li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
